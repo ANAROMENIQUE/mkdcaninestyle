@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKD CanineStyle - Camisas para Amantes de Pastor Alemão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MKD CanineStyle</h1>
+                <p>Camisas para amantes de Pastor Alemão</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li>
+                        <a href="#" id="carrinho-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="carrinho-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Estilo Canino com Personalidade</h2>
+                <p>Camisas exclusivas para celebrar a nobreza e lealdade do Pastor Alemão</p>
+                <a href="#produtos" class="btn">Ver Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Nossas Camisas</h2>
+            <div class="produtos-grid">
+                
+                <!-- Produto 1 -->
+                <div class="produto">
+                    <div class="produto-img-container">
+                        <img src="imagens/camisa mkd fundo vermelho.jpg" alt="Camisa Maximus" class="produto-img">
+                        <div class="zoom-icon" onclick="ampliarImagem('https://placehold.co/600x800/8B4513/FFFFFF?text=Camisa+Maximus+Ampliada')">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>Camisa Maximus design exclusivo</h3>
+                    <p>R$ 79,90</p>
+                    <div class="quantidade">
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto1', -1)">-</button>
+                        <span id="qtd-produto1">1</span>
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto1', 1)">+</button>
+                    </div>
+                    <button class="add-carrinho" onclick="adicionarAoCarrinho('produto1', 'Camisa Maximus', 79.90, 'https://placehold.co/300x400/8B4513/FFFFFF?text=Camisa+Maximus')">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto">
+                    <div class="produto-img-container">
+                        <img src="imagens/kadu mkd.PNG" alt="Camisa casual Kadu" class="produto-img">
+                        <div class="zoom-icon" onclick="ampliarImagem('https://placehold.co/600x800/000000/FFFFFF?text=Camisa+Kadu+Ampliada')">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>Camisa casual Kadu</h3>
+                    <p>R$ 79,90</p>
+                    <div class="quantidade">
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto2', -1)">-</button>
+                        <span id="qtd-produto2">1</span>
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto2', 1)">+</button>
+                    </div>
+                    <button class="add-carrinho" onclick="adicionarAoCarrinho('produto2', 'Camisa Kadu', 79.90, 'https://placehold.co/300x400/000000/FFFFFF?text=Camisa+Kadu')">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto">
+                    <div class="produto-img-container">
+                        <img src="imagens/duque grafit.PNG" alt="Camisa Duque" class="produto-img">
+                        <div class="zoom-icon" onclick="ampliarImagem('https://placehold.co/600x800/D4AF37/000000?text=Camisa+Duque+Ampliada')">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>Camisa Duque estilo grafit</h3>
+                    <p>R$ 79,90</p>
+                    <div class="quantidade">
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto3', -1)">-</button>
+                        <span id="qtd-produto3">1</span>
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto3', 1)">+</button>
+                    </div>
+                    <button class="add-carrinho" onclick="adicionarAoCarrinho('produto3', 'Camisa Duque', 79.90, 'https://placehold.co/300x400/D4AF37/000000?text=Camisa+Duque')">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="produto">
+                    <div class="produto-img-container">
+                        <img src="imagens/camisa mkd cinza duque.jpg" alt="Camisa Básica" class="produto-img">
+                        <div class="zoom-icon" onclick="ampliarImagem('https://placehold.co/600x800/8B4513/FFFFFF?text=Camisa+Básica+Ampliada')">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>Camisa básica</h3>
+                    <p>R$ 69,90</p>
+                    <div class="quantidade">
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto4', -1)">-</button>
+                        <span id="qtd-produto4">1</span>
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto4', 1)">+</button>
+                    </div>
+                    <button class="add-carrinho" onclick="adicionarAoCarrinho('produto4', 'Camisa Básica', 69.90, 'https://placehold.co/300x400/8B4513/FFFFFF?text=Camisa+Básica')">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="produto">
+                    <div class="produto-img-container">
+                        <img src="imagens/neon.jpg" alt="Camisa Neon" class="produto-img">
+                        <div class="zoom-icon" onclick="ampliarImagem('https://placehold.co/600x800/000000/FFFFFF?text=Camisa+Neon+Ampliada')">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>Camisa básica neon</h3>
+                    <p>R$ 69,90</p>
+                    <div class="quantidade">
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto5', -1)">-</button>
+                        <span id="qtd-produto5">1</span>
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto5', 1)">+</button>
+                    </div>
+                    <button class="add-carrinho" onclick="adicionarAoCarrinho('produto5', 'Camisa Neon', 69.90, 'https://placehold.co/300x400/000000/FFFFFF?text=Camisa+Neon')">Adicionar ao Carrinho</button>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="produto">
+                    <div class="produto-img-container">
+                        <img src="imagens/clt.PNG" alt="Camisa CLT" class="produto-img">
+                        <div class="zoom-icon" onclick="ampliarImagem('https://placehold.co/600x800/D4AF37/000000?text=Camisa+CLT+Ampliada')">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>Camisa básica CLT</h3>
+                    <p>R$ 69,90</p>
+                    <div class="quantidade">
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto6', -1)">-</button>
+                        <span id="qtd-produto6">1</span>
+                        <button class="qtd-btn" onclick="alterarQuantidade('produto6', 1)">+</button>
+                    </div>
+                    <button class="add-carrinho" onclick="adicionarAoCarrinho('produto6', 'Camisa CLT', 69.90, 'https://placehold.co/300x400/D4AF37/000000?text=Camisa+CLT')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre a MKD CanineStyle</h2>
+            <div class="sobre-content">
+                <div class="missao">
+                    <h3><i class="fas fa-bullseye"></i> Missão</h3>
+                    <p>Celebrar a nobreza, lealdade e inteligência do Pastor Alemão através de produtos de qualidade que permitam aos amantes desta raça expressar sua paixão, honrando a herança de Maximus, Kadu e Duque.</p>
+                </div>
+                <div class="visao">
+                    <h3><i class="fas fa-eye"></i> Visão</h3>
+                    <p>Ser a marca líder em produtos especializados para entusiastas de Pastor Alemão, recognizada pela qualidade, autenticidade e compromisso com a comunidade canina.</p>
+                </div>
+                <div class="valores">
+                    <h3><i class="fas fa-heart"></i> Valores</h3>
+                    <ul>
+                        <li>Lealdade и confiança em nossos produtos e relacionamentos</li>
+                        <li>Excelência em qualidade e design</li>
+                        <li>Respeito e amor pelos animais</li>
+                        <li>Integridade em todas as nossas ações</li>
+                        <li>Paixão pela raça Pastor Alemão</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrinho de Compras Modal -->
+    <div id="carrinho-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div id="carrinho-itens"></div>
+            <div class="carrinho-total">
+                <h3>Total: R$ <span id="carrinho-total">0,00</span></h3>
+            </div>
+            <button id="finalizar-compra" class="btn">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Finalizar Compra</h2>
+            <form id="checkout-form">
+                <div class="form-section">
+                    <h3>Dados Pessoais</h3>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Endereço de Entrega</h3>
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" id="complemento">
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <select id="estado" required>
+                            <option value="">Selecione...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Forma de Pagamento</h3>
+                    <div class="form-group">
+                        <label for="pagamento">Selecione a forma de pagamento:</label>
+                        <select id="pagamento" required>
+                            <option value="">Selecione...</option>
+                            <option value="pix">PIX</option>
+                            <option value="cartao">Cartão de Crédito</option>
+                            <option value="boleto">Boleto Bancário</option>
+                        </select>
+                    </div>
+
+                    <!-- Formulário PIX -->
+                    <div id="pix-form" class="pagamento-form">
+                        <div class="pix-info">
+                            <p>Pagamento via PIX - Receba o QR Code para pagamento</p>
+                            <p>Pagamento aprovado instantaneamente</p>
+                        </div>
+                    </div>
+
+                    <!-- Formulário Cartão -->
+                    <div id="cartao-form" class="pagamento-form">
+                        <div class="form-group">
+                            <label for="numero-cartao">Número do Cartão:</label>
+                            <input type="text" id="numero-cartao" placeholder="0000 0000 0000 0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="nome-cartao">Nome no Cartão:</label>
+                            <input type="text" id="nome-cartao">
+                        </div>
+                        <div class="form-group-duplo">
+                            <div class="form-group">
+                                <label for="validade-cartao">Validade:</label>
+                                <input type="text" id="validade-cartao" placeholder="MM/AA">
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv-cartao">CVV:</label>
+                                <input type="text" id="cvv-cartao" placeholder="000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="parcelas">Parcelas:</label>
+                            <select id="parcelas">
+                                <option value="1">1x de R$ <span class="parcela-valor">0,00</span> sem juros</option>
+                                <option value="2">2x de R$ <span class="parcela-valor">0,00</span> sem juros</option>
+                                <option value="3">3x de R$ <span class="parcela-valor">0,00</span> sem juros</option>
+                                <option value="4">4x de R$ <span class="parcela-valor">0,00</span> sem juros</option>
+                                <option value="5">5x de R$ <span class="parcela-valor">0,00</span> sem juros</option>
+                                <option value="6">6x de R$ <span class="parcela-valor">0,00</span> sem juros</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Formulário Boleto -->
+                    <div id="boleto-form" class="pagamento-form">
+                        <div class="boleto-info">
+                            <p>Pagamento via Boleto Bancário</p>
+                            <p>O boleto será gerado após a finalização do pedido e poderá ser pago em qualquer agência bancária ou internet banking</p>
+                            <p>O prazo para compensação é de até 3 dias úteis</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Concluir Pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Imagem Ampliada -->
+    <div id="imagem-modal" class="modal">
+        <div class="modal-content imagem-ampliada">
+            <span class="close">&times;</span>
+            <img id="imagem-ampliada" src="" alt="Imagem ampliada do produto">
+        </div>
+    </div>
+
+    <!-- Confirmação de Pedido Modal -->
+    <div id="confirmacao-modal" class="modal">
+        <div class="modal-content confirmacao">
+            <h2>Pedido Confirmado!</h2>
+            <div class="whatsapp-redirect">
+                <p>Seu pedido foi registrado com sucesso! Clique no botão abaixo para finalizar pelo WhatsApp:</p>
+                <a id="whatsapp-link" href="#" target="_blank" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Finalizar Pedido pelo WhatsApp
+                </a>
+            </div>
+            <div class="resumo-pedido">
+                <h3>Resumo do Pedido</h3>
+                <div id="resumo-itens"></div>
+                <div class="resumo-total">
+                    <p>Total: R$ <span id="resumo-total">0,00</span></p>
+                    <p>Forma de Pagamento: <span id="resumo-pagamento"></span></p>
+                </div>
+            </div>
+            <p>Obrigado por comprar na MKD CanineStyle!</p>
+            <button id="voltar-inicio" class="btn">Voltar à Página Inicial</button>
+        </div>
+    </div>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <p><i class="fas fa-envelope"></i> contato@mkdcaninestyle.com.br</p>
+                    <a href="https://wa.me/5591982476739" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Envie uma mensagem pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mídias Sociais Section -->
+    <section class="midias-sociais">
+        <div class="container">
+            <h2>Siga-nos nas Redes Sociais</h2>
+            <p>Fique por dentro das novidades e promoções</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/mkdcaninestyle?igsh=cm1kZG1oeTV5YXh5&utm_source=qr" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61580401530502" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.tiktok.com/@mkdcaninestyle?_t=ZM-8zhdbZe8lOC&_r=1" target="_blank" class="social-link">
+                    <i class="fab fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="http://www.youtube.com/@MKdCanineStyle" target="_blank" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>MKD CanineStyle</h2>
+                    <p>Camisas para amantes de Pastor Alemão</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#produtos">Produtos</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+            
+            <p>&copy; 2025 MKD CanineStyle - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
